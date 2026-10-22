@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b0a">
+  <meta name="description" content="CODE LAB: academia gratuita para aprender Python, JavaScript, HTML, Java y bots de Discord desde cero.">
+  <title>CODE LAB // Academia de programación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="CODE LAB inicio"><span class="brand-mark">&gt;_</span> CODE<span>LAB</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav">☰ Menú</button>
+    <nav id="nav">
+      <a href="#rutas">Cursos</a>
+      <a href="#discord">Bots Discord</a>
+      <a href="#practica">Practicar</a>
+      <a href="#recursos">Recursos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> TERMINAL DE APRENDIZAJE // ACCESO PÚBLICO</p>
+        <h1>APRENDÉ A<br><span>PROGRAMAR.</span></h1>
+        <p class="hero-text">Tu punto de partida para crear páginas web, programas y bots. Explicaciones en español, ejemplos claros y práctica desde cero.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#rutas">EXPLORAR CURSOS <span>↘</span></a>
+          <a class="btn btn-ghost" href="#practica">IR A LA PRÁCTICA</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>04</strong><span>RUTAS INICIALES</span></div>
+          <div><strong>100%</strong><span>EN ESPAÑOL</span></div>
+          <div><strong>GRATIS</strong><span>ACCESO PÚBLICO</span></div>
+        </div>
+      </div>
+      <div class="terminal-card" aria-label="Ejemplo de código Python">
+        <div class="terminal-head"><div class="dots"><i></i><i></i><i></i></div><span>primer_programa.py</span><span class="terminal-status">● ONLINE</span></div>
+        <div class="terminal-body">
+          <p><span class="line-no">01</span> <span class="purple">nombre</span> = <span class="yellow">"Programador"</span></p>
+          <p><span class="line-no">02</span> <span class="blue">print</span>(<span class="yellow">"Hola, "</span> + nombre)</p>
+          <p class="blank"><span class="line-no">03</span></p>
+          <p><span class="line-no">04</span> <span class="comment"># Tu camino empieza acá.</span></p>
+          <p><span class="line-no">05</span> <span class="green">print</span>(<span class="yellow">"¡A programar!"</span>)</p>
+          <div class="terminal-output"><span>▶ SALIDA</span><br>Hola, Programador<br>¡A programar!<span class="cursor">▋</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rutas">
+      <div class="section-heading"><div><p class="eyebrow">01 // ELEGÍ TU RUTA</p><h2>Tu próximo nivel empieza <span>acá.</span></h2></div><p class="section-intro">No necesitás experiencia previa. Elegí un lenguaje y avanzá paso a paso.</p></div>
+      <div class="course-grid">
+        <article class="course-card python">
+          <div class="course-top"><span class="lang-icon">Py</span><span class="tag">IDEAL PARA EMPEZAR</span></div>
+          <h3>Python</h3><p>Aprendé la lógica de programación y creá scripts, automatizaciones y bots.</p>
+          <div class="chips"><span>Variables</span><span>Condiciones</span><span>Funciones</span></div>
+          <button class="text-button" data-course="python">ABRIR CURSO <span>↗</span></button>
+        </article>
+        <article class="course-card javascript">
+          <div class="course-top"><span class="lang-icon">JS</span><span class="tag">WEB INTERACTIVA</span></div>
+          <h3>JavaScript</h3><p>Dale vida a las páginas web con eventos, funciones y contenido dinámico.</p>
+          <div class="chips"><span>Variables</span><span>Eventos</span><span>DOM</span></div>
+          <button class="text-button" data-course="javascript">ABRIR CURSO <span>↗</span></button>
+        </article>
+        <article class="course-card html">
+          <div class="course-top"><span class="lang-icon">5</span><span class="tag">CREÁ PÁGINAS</span></div>
+          <h3>HTML</h3><p>Construí la estructura de sitios con títulos, párrafos, enlaces e imágenes.</p>
+          <div class="chips"><span>Etiquetas</span><span>Enlaces</span><span>Formularios</span></div>
+          <button class="text-button" data-course="html">ABRIR CURSO <span>↗</span></button>
+        </article>
+        <article class="course-card java">
+          <div class="course-top"><span class="lang-icon">Jv</span><span class="tag">PROGRAMACIÓN</span></div>
+          <h3>Java</h3><p>Conocé tipos de datos, clases y la base para crear aplicaciones.</p>
+          <div class="chips"><span>Tipos</span><span>Clases</span><span>Objetos</span></div>
+          <button class="text-button" data-course="java">ABRIR CURSO <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section lesson-section" id="leccion">
+      <div class="section-heading"><div><p class="eyebrow">02 // AULA INTERACTIVA</p><h2 id="lessonTitle">Primeros pasos con <span>Python.</span></h2></div><span class="tag">LECCIÓN 01</span></div>
+      <div class="lesson-layout">
+        <div class="lesson-copy"><p id="lessonDescription">La función print() muestra texto en la consola. Es una forma sencilla de comprobar que tu programa funciona.</p>
+          <h3>¿Qué estás viendo?</h3><ul id="lessonPoints"><li><code>print()</code> muestra información.</li><li>El texto va entre comillas.</li><li>Probá cambiar el mensaje.</li></ul>
+          <div class="tip"><strong>TIP DE LAB</strong><p>Escribí el ejemplo vos mismo y cambiá algo. Aprender haciendo ayuda a recordar.</p></div>
+        </div>
+        <div class="code-panel"><div class="code-header"><span id="fileName">hola.py</span><button class="copy-button" id="copyCode">COPIAR CÓDIGO</button></div><pre><code id="lessonCode">print("Hola, mundo!")</code></pre><div class="code-footer"><span>● EJEMPLO</span><span id="languageLabel">PYTHON</span></div></div>
+      </div>
+    </section>
+
+    <section class="section discord-section" id="discord">
+      <div class="discord-copy"><p class="eyebrow">03 // PROYECTO GUIADO</p><h2>Construí tu primer<br><span>bot de Discord.</span></h2><p>Aprendé cómo se organiza un bot con Python y la biblioteca discord.py. Este ejemplo es educativo: no contiene tokens ni credenciales.</p>
+        <ol class="steps"><li><span>01</span><div><strong>Prepará el entorno</strong><p>Instalá Python y discord.py en una computadora o entorno compatible.</p></div></li><li><span>02</span><div><strong>Creá tu aplicación</strong><p>Usá el portal de desarrolladores de Discord y configurá los permisos necesarios.</p></div></li><li><span>03</span><div><strong>Probá un comando slash</strong><p>Empezá con un comando simple y después agregá funciones de forma gradual.</p></div></li></ol>
+        <a class="btn btn-primary" href="https://discord.com/developers/applications" target="_blank" rel="noopener noreferrer">PORTAL DE DISCORD ↗</a>
+      </div>
+      <div class="code-panel bot-code"><div class="code-header"><span>bot.py</span><button class="copy-button" data-copy="botCode">COPIAR CÓDIGO</button></div><pre><code id="botCode">import discord
+from discord import app_commands
+from discord.ext import commands
+
+intents = discord.Intents.default()
+bot = commands.Bot(command_prefix="!", intents=intents)
+
+@bot.event
+async def on_ready():
+    print(f"Conectado como {bot.user}")
+    await bot.tree.sync()
+
+@bot.tree.command(name="hola", description="Saluda al servidor")
+async def hola(interaction: discord.Interaction):
+    await interaction.response.send_message(
+        f"¡Hola, {interaction.user.mention}!"
+    )
+
+# Configurá DISCORD_TOKEN como variable de entorno.
+# No publiques ni compartas tu token.
+</code></pre><div class="code-footer"><span>● PYTHON / DISCORD.PY 2.x</span><span>DEMO</span></div></div>
+    </section>
+
+    <section class="section practice-section" id="practica">
+      <div class="section-heading"><div><p class="eyebrow">04 // PONÉ A PRUEBA LO APRENDIDO</p><h2>Desafío de <span>práctica.</span></h2></div><p class="section-intro">Elegí una respuesta. Vas a recibir una explicación al instante.</p></div>
+      <div class="quiz-card">
+        <div class="quiz-number">DESAFÍO <span id="quizCount">01 / 04</span></div>
+        <h3 id="quizQuestion">¿Qué función de Python muestra texto en la consola?</h3>
+        <div class="quiz-options" id="quizOptions">
+          <button data-answer="0">echo()</button><button data-answer="1">print()</button><button data-answer="2">showText()</button>
+        </div>
+        <p id="quizFeedback" class="quiz-feedback" aria-live="polite">Seleccioná una respuesta para comprobar lo que aprendiste.</p>
+        <button class="btn btn-ghost" id="nextQuiz" hidden>SIGUIENTE DESAFÍO →</button>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="recursos">
+      <div class="section-heading"><div><p class="eyebrow">05 // SEGUÍ APRENDIENDO</p><h2>Herramientas para <span>practicar.</span></h2></div></div>
+      <div class="resource-grid">
+        <a class="resource-card" href="https://www.python.org/about/gettingstarted/" target="_blank" rel="noopener noreferrer"><span>↗</span><h3>Python.org</h3><p>Documentación y guía oficial para empezar con Python.</p><small>DOCUMENTACIÓN OFICIAL</small></a>
+        <a class="resource-card" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer"><span>↗</span><h3>MDN Web Docs</h3><p>Material para HTML, CSS y JavaScript.</p><small>GUÍAS WEB</small></a>
+        <a class="resource-card" href="https://dev.java/learn/" target="_blank" rel="noopener noreferrer"><span>↗</span><h3>Dev.java</h3><p>Tutoriales y recursos para aprender Java.</p><small>GUÍAS DE JAVA</small></a>
+        <a class="resource-card" href="https://discordpy.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer"><span>↗</span><h3>discord.py</h3><p>Documentación de la biblioteca para crear bots de Discord.</p><small>DOCUMENTACIÓN DE BOTS</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">&gt;_</span> CODE<span>LAB</span></a><p>Aprendé. Practicá. Construí.</p><p class="footer-note">Proyecto educativo comunitario · Gratis para aprender</p><a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
